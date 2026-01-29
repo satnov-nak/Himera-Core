@@ -1,0 +1,7 @@
+target/
+wallet*.him
+node*.lz4
+*.lz4
+*.him
+Cargo.lock
+__pycache__/

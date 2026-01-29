@@ -1,0 +1,25 @@
+[package]
+name = "himera"
+version = "0.8.3"
+edition = "2021"
+
+[dependencies]
+# Постквантовая криптография
+pqcrypto-dilithium = "0.5.0"
+pqcrypto-traits = "0.3.5"
+
+# Данные и хеширование
+sha2 = "0.10"
+hex = "0.4.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+lz4_flex = "0.11"
+
+# Асинхронный движок и сеть
+tokio = { version = "1.0", features = ["full"] }
+warp = "0.3"
+chrono = "0.4"
+
+[[bin]]
+name = "himera_node"
+path = "src/main.rs"
